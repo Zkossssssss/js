@@ -7,12 +7,16 @@
 		<title>PageTitle</title>
 		<script src='index.js'></script>
 		<script src='jquery-3.6.0.js'></script>
+		<link rel='stylesheet' href='styles.css'>
 	</head>
 	<body>
+	<body>
 <button onclick='LoadFromSite()'>Загрузить</button><br>
-<span>Имя: </span><input type='text' id='name'><br>
-<span>Фамилия: </span><input type='text' id='surname'><br>
-<button id='btnnext' onclick='next()'>Далее</button> 
-<button id='btnprev' onclick='prev()' disabled>Назад</button> 
-	</body>
+<table id='tbl_all'>
+	<tr>
+	<th>ID</th>
+	<th>Имя</th>
+	<th>Фамилия</th>
+	</tr>
+</table>
 </html> 
