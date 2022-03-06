@@ -1,3 +1,4 @@
+
 let students = []
 let max_id = -1
 
