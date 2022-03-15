@@ -1,12 +1,17 @@
 function draw() {
 	let canva = document.getElementById('canva')
 	let ctx = canva.getContext('2d')
-	// координаты начала линии X,Y
+	 ctx.beginPath();
+ctx.strokeStyle = "red";
+ctx.lineWidth = "10";
+ctx.moveTo(100,150);
+ctx.lineTo(100,250);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle = "blue";
+ctx.lineWidth = "6";
 ctx.moveTo(200,100);
-// команда рисования линии с координатами конца линии
-ctx.lineTo(500,200);
-ctx.strokeStyle = "pink"; //цвет линии
-ctx.lineWidth = "10"; //толщина линии
- ctx.lineTo(500,50);
-ctx.stroke(); // обводка линии     
+ctx.lineTo(400,100);
+ctx.stroke(); 
 }
